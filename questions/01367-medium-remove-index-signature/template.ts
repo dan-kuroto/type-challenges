@@ -9,7 +9,3 @@ type RemoveIndexSignature<T> = {
         : key
   ]: T[key]
 }
-type a = RemoveIndexSignature<{
-  [key: string]: any
-  foo(): void
-}>
