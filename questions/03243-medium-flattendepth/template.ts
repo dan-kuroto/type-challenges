@@ -6,5 +6,3 @@ type FlattenDepth<T extends any[], D extends number = 1, C extends any[] = []> =
         : [...FlattenDepth<F, D, [0, ...C]>, ...FlattenDepth<Rest, D, C>]
       : [F, ...FlattenDepth<Rest, D, C>]
     : []
-
-type a = FlattenDepth<[1, 2, [3, 4], [[[5]]]], 2>
